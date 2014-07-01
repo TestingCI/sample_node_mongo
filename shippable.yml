@@ -31,3 +31,6 @@ after_script:
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
 after_success:
  - git push git@heroku.com:node-mongo-sample.git master 
+after_archive:
+      - echo $SHIPPABLE_ARTIFACTS_URL
+      - echo $ARTIFACTS_UPLOAD_SUCCESSFUL
