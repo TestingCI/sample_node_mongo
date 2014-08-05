@@ -2,7 +2,7 @@
 language: node_js
 
 # Version number
-
+reset_minion: true
  
 node_js:
  - 0.10
